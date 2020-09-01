@@ -180,6 +180,10 @@ li {
   height: 20%;
   align-content: center;
 }
+.subtitle {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
 #logo img {
   width: 100%;
 }
@@ -245,7 +249,29 @@ li {
 .clear {
   clear: both;
 }
+/* -------------------------------------------------------------------------------------------- */
 
+/* Shop with me  */
+#shop-with-me {
+  display: grid;
+}
+.shop-with-me-container {
+  padding: 20px;
+}
+.shop-with-me-container a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 5px;
+}
+.items img {
+  height: 225px;
+  width: 225px;
+}
+.items h3 {
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+/* -------------------------------------------------------------------------------------------- */
 /* Footer */
 #Footer {
   text-align: center;
