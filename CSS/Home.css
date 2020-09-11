@@ -257,15 +257,28 @@ li {
 }
 .shop-with-me-container {
   padding: 20px;
+  text-align: center;
 }
 .shop-with-me-container a {
   text-decoration: none;
   color: black;
   padding-bottom: 5px;
 }
+.shop-with-me-container h2 {
+  text-decoration: underline;
+  font-size: 2.5rem;
+}
+.items a {
+  padding-bottom: 10px;
+}
+.items {
+  text-align: center;
+  padding: 5px;
+  display: inline-block;
+}
 .items img {
-  height: 225px;
-  width: 225px;
+  height: 300px;
+  width: 300px;
 }
 .items h3 {
   padding-bottom: 5px;
