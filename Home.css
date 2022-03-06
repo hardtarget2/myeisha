@@ -1,3 +1,6 @@
+/* font-family: 'Abhaya Libre', serif;
+font-family: 'Cantarell', sans-serif;
+font-family: 'Poppins', sans-serif; */
 html,
 body,
 div,
@@ -125,8 +128,22 @@ table {
 /* --------------------------------------------------------------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
-  background-image: linear-gradient(45deg, #ff512f, #f09819);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/CSS/IMG/1304272942.jpg) no-repeat center center fixed ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;  
 }
+
+h1{
+font-family: 'Poppins', sans-serif;
+}
+h2{
+font-family: 'Abhaya Libre', serif;
+}
+h3{
+font-family: 'Cantarell', sans-serif;
+}
+
 /* Header */
 #Header {
   text-decoration: none;
@@ -151,28 +168,32 @@ li {
 /*Buttons  */
 
 .btn {
-  box-shadow: 3px 4px 0px 0px #8a2a21;
-  background: linear-gradient(to bottom, #e8e0df 5%, #f24437 100%);
-  background-color: #e8e0df;
-  border-radius: 18px;
-  border: 1px solid #d02718;
-  display: inline-block;
-  cursor: pointer;
-  color: black;
-  font-family: Verdana;
-  font-size: 20px;
-  padding: 7px 25px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #810e05;
+  background-image: linear-gradient(to right, #215f00 0%, #e4e4d9  51%, #215f00  100%)
 }
-.btn:hover {
-  background: linear-gradient(to bottom, #f24437 5%, #e8e0df 100%);
-  background-color: #f24437;
-}
-.btn:active {
-  position: relative;
-  top: 1px;
-}
+.btn {
+   padding-right: 10px;
+   size: 1rem;
+   padding: 7px 25px;
+   text-align: center;
+   display: inline-block;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: rgb(255, 255, 255);            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   box-shadow: 3px 4px 0px 0px #C0B78E;
+   border-radius: 18px;
+   text-decoration: none;
+   font-family: 'Abhaya Libre', serif;
+ }
+
+ .btn:hover{
+   background-position: left center; /* change the direction of the change here */
+   color: #284022;
+   text-decoration: underline;
+   background-image: linear-gradient(to right, #C0B78E 0%, #C9DBC3  51%, #FEFFFF  100%)
+ }
+
 /* --------------------------------------------------------------------------------------- */
 /*Logo  */
 #logo {
@@ -181,7 +202,7 @@ li {
   align-content: center;
 }
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 #logo img {
@@ -190,8 +211,9 @@ li {
 
 .Title {
   padding-bottom: 10px;
-  font-size: 5rem;
+  font-size: 6rem;
 }
+
 .logo-container {
   display: grid;
   place-items: center;
@@ -216,25 +238,41 @@ li {
 .things {
   width: 50%;
   height: auto;
+  float:left;
+  
+  
+}
+.things h3{
   text-align: center;
-  float: left;
+  
 }
 .things li {
-  display: block;
-  list-style-type: disc !important;
+  display:list-item;
+  
+  
+  
+}
+.things li span {
+  position: relative;
+  left: -10px;
+  
 }
 .things ul {
   margin-top: 1em;
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-left: 6rem;
+  padding-left: 350px;
+  
 }
 .things ul li {
-  padding-bottom: 5px;
-  font-size: 1.5rem;
-  list-style-position: outside;
-  list-style-type: square;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  list-style-position: inside;
+  list-style:none;
 }
-
+.things li::before {
+  content: '🥤 ';
+}
 .item-of-month {
   text-align: center;
   width: 50%;
@@ -268,6 +306,9 @@ li {
   text-decoration: underline;
   font-size: 2.5rem;
 }
+.items h3 {
+  text-align: left;
+}
 .items a {
   padding-bottom: 10px;
 }
@@ -279,19 +320,115 @@ li {
 .items img {
   height: 300px;
   width: 300px;
+  border-radius:10px;
 }
 .items h3 {
   padding-bottom: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 /* -------------------------------------------------------------------------------------------- */
+/* Disclaimer*/
+
+#Products-Disclaimer h3 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+.Disclaimer-container{
+  padding: 50px;
+  overflow: auto;
+}
+
+.Details{
+    width: 50%;
+    height: auto;
+    float:left;
+}
+.Details h3{
+  text-align: center;
+  
+}
+.Details li {
+  display:list-item;
+  font-family: 'Cantarell', sans-serif;
+
+}
+.Details li::before {
+  content: '🥤 ';
+}
+
+.Details ul {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding-left: 200px;
+  
+}
+.Details ul li {
+  padding-bottom: 5px;
+  font-size: 2rem;
+  list-style-position: inside;
+  list-style: none;
+}
+.Details li span {
+  position: relative;
+  left: -10px;
+}
+
+.Disclaimers{
+  width: 50%;
+  float: right;
+}
+.Disclaimers h3{
+  text-align: center;
+  
+}
+.Disclaimers li {
+  display:list-item;
+  font-family: 'Cantarell', sans-serif;
+
+}
+.Disclaimers ul {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding-left: 200px;
+  
+}
+.Disclaimers li::before {
+  content: '🥤 ';
+}
+.Disclaimers ul li {
+  padding-bottom: 10px;
+  font-size: 2rem;
+  list-style-position: inside;
+  list-style:none;
+}
+
+.Disclaimers li span {
+  position: relative;
+  left: -10px;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
 /* Footer */
-#Footer {
+#Footer{
   text-align: center;
   padding: 20px;
+  font-size: 1rem; 
 }
 #Footer img {
   height: 30px;
   width: 30px;
 }
 /* -------------------------------------------------------------------------------------------- */
+
+/* 
+#284022
+#A9BF99
+#57733C
+#D9C382
+#F2F2F2 
+*/
+
