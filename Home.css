@@ -123,7 +123,7 @@ q:after {
 }
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0; 
 }
 /* --------------------------------------------------------------------------------------------------------------------- */
 html {
@@ -163,6 +163,8 @@ ul li {
 li {
   padding-right: 10px;
 }
+
+
 /* --------------------------------------------------------------------------------------- */
 
 /*Buttons  */
@@ -172,7 +174,7 @@ li {
 }
 .btn {
    padding-right: 10px;
-   size: 1rem;
+   size: 1.5rem;
    padding: 7px 25px;
    text-align: center;
    display: inline-block;
@@ -180,11 +182,9 @@ li {
    background-size: 200% auto;
    color: rgb(255, 255, 255);            
    box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
    box-shadow: 3px 4px 0px 0px #C0B78E;
-   border-radius: 18px;
    text-decoration: none;
-   font-family: 'Abhaya Libre', serif;
+   font-family: 'Cantarell', sans-serif;
  }
 
  .btn:hover{
@@ -193,7 +193,15 @@ li {
    text-decoration: underline;
    background-image: linear-gradient(to right, #C0B78E 0%, #C9DBC3  51%, #FEFFFF  100%)
  }
-
+ @media screen and (max-width: 600px) {
+  .container {
+      background-color: red;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container nav{
+      display: inline-block;
+  }
 /* --------------------------------------------------------------------------------------- */
 /*Logo  */
 #logo {
