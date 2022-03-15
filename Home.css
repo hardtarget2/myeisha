@@ -195,7 +195,7 @@ li {
  }
  @media screen and (max-width: 600px) {
   .container {
-      background-color: red;
+      background-color: blue;
   }
 }
 @media screen and (max-width: 1024px) {
