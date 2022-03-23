@@ -194,32 +194,31 @@ li {
    background-image: linear-gradient(to right, #C0B78E 0%, #C9DBC3  51%, #FEFFFF  100%)
  }
  @media screen and (max-width: 600px) {
-  .container {
-      background-color: blue;
-      width: 320px;
+  html {
+    background-size: cover;
+    background-position: right;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./CSS/IMG/1304272942.jpg) no-repeat ; 
+  }
+}
+/* Media Querie for button 320-480 width */
+  @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+    .btn {
+      font-size:1em;
+      width:100%;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      width: fit-content;
+      text-align: center;
+      
+    }
+}
+@media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+    .container{
+      margin: 0;
+      float: left;
+  }
+}
 
-      
-  }
-}
-@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
-  .btn {
-      width:320px;
-      
-  }
-}
-@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
-  .nav li{
-      display: inline;
-      
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container nav{
-      /* display: inline; */
-      /* width: 50px; */
-  }
-}
 /* --------------------------------------------------------------------------------------- */
 /*Logo  */
 #logo {
